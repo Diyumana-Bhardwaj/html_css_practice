@@ -1,0 +1,48 @@
+body{
+    background-color: wheat;
+}
+#loader1{
+    border-left: 10px solid rgb(252, 252, 39);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: wheat;
+    animation: identifier 3s linear 0s infinite normal;
+}
+
+@keyframes identifier {
+    20%{
+        border-color: yellowgreen;
+    }
+    40%{
+        border-color: blue;
+    }
+    60%{
+        border-color: blueviolet;
+    }
+    80%{
+        border-color: red;
+    }
+    90%{
+        border-color: darkorange;
+    }
+    100%{
+        transform: rotate(360deg);  
+    }
+}
+
+#loader2{
+    border: 10px solid wheat;
+    border-left: 10px solid red;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: wheat;
+    animation: loader 3s linear 0s infinite normal;
+}
+
+@keyframes loader{
+    100%{
+        transform: rotate(360deg);
+    }
+}
